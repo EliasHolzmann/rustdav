@@ -1,0 +1,12 @@
+[package]
+name = "rustdav"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dav-server = "0.5.0"
+env_logger = "0.9.1"
+hyper = { version = "0.14.20", features = ["server", "http2", "http1", "runtime"] }
+tokio = { version = "1.21.2", features = ["rt", "macros"] }
