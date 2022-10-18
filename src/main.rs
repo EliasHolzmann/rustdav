@@ -5,7 +5,7 @@ use std::convert::Infallible;
 async fn main() {
     env_logger::init();
     let dir = "/tmp";
-    let addr = ([127, 0, 0, 1], 4918).into();
+    let addr = ([0, 0, 0, 0], 4918).into();
 
     let dav_server = DavHandler::builder()
         .filesystem(LocalFs::new(dir, false, false, false))
