@@ -4,7 +4,7 @@ use std::convert::Infallible;
 #[tokio::main]
 async fn main() {
     env_logger::init();
-    let dir = "/tmp";
+    let dir = "/mnt/LARS";
     let addr = ([0, 0, 0, 0], 4918).into();
 
     let dav_server = DavHandler::builder()
