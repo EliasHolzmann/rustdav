@@ -8,7 +8,7 @@ async fn main() {
     let addr = ([0, 0, 0, 0], 4918).into();
 
     let dav_server = DavHandler::builder()
-        .filesystem(LocalFs::new(dir, false, false, false))
+        .filesystem(LocalFs::new(dir, true, false, false))
         .locksystem(FakeLs::new())
         .build_handler();
 
